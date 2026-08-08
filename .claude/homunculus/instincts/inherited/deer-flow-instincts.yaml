@@ -1,0 +1,277 @@
+# Instincts generated from https://github.com/lllyyysss77/deer-flow
+# Generated: 2026-06-01T04:39:25.183Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: deer-flow-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/deer-flow
+---
+
+# Deer Flow Commit Length
+
+## Action
+
+Write moderate-length commit messages (~100 characters)
+
+## Evidence
+
+- Average commit message length: 100 chars
+- Based on 2 commits
+
+---
+id: deer-flow-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/deer-flow
+---
+
+# Deer Flow Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: deer-flow-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/deer-flow
+---
+
+# Deer Flow Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: deer-flow-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/deer-flow
+---
+
+# Deer Flow Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: deer-flow-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern: namingConventions.files = snake_case
+
+---
+id: deer-flow-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern: namingConventions.functions = camelCase
+
+---
+id: deer-flow-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern: namingConventions.classes = PascalCase
+
+---
+id: deer-flow-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern: namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: deer-flow-instinct-import-style
+trigger: "When importing modules within the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern: importStyle = relative
+
+---
+id: deer-flow-instinct-export-style
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern: exportStyle = named
+
+---
+id: deer-flow-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Test Location
+
+## Action
+
+Place tests in both source and dedicated test folders as appropriate (mixed location)
+
+## Evidence
+
+- Pattern: testLocation = mixed
+
+---
+id: deer-flow-instinct-commit-prefix-fix
+trigger: "When committing a bug fix"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Commit Prefix Fix
+
+## Action
+
+Prefix the commit message with 'fix' (optionally with scope in parentheses)
+
+## Evidence
+
+- Pattern: commit prefixes includes 'fix'
+- Example: fix(makefile): extract setup-sandbox inline bash to script for Windows compatibility (#3326)
+
+---
+id: deer-flow-instinct-commit-format-scope
+trigger: "When writing a commit message for a fix"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Commit Format Scope
+
+## Action
+
+Include the affected area in parentheses after the 'fix' prefix
+
+## Evidence
+
+- Example: fix(makefile): extract setup-sandbox inline bash to script for Windows compatibility (#3326)
+
+---
+id: deer-flow-instinct-commit-format-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/deer-flow
+---
+
+# Deer Flow Instinct Commit Format Length
+
+## Action
+
+Aim for a descriptive message around 100 characters in length
+
+## Evidence
+
+- Pattern: average commit length = 100
+
